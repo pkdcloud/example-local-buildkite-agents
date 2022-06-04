@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+
+  buildkite-agent:
+    build: .docker/buildkite-agent
+    image: ${ENTITY}/buildkite-agent
+    environment:
+      - BUILDKITE_AGENT_CONFIG=/etc/buildkite-agent/buildkite-agent.cfg
+    volumes:
+      - .:/work
+      - ~/.buildkite/buildkite-agent.cfg:/etc/buildkite-agent/buildkite-agent.cfg
+      - ~/.ssh:/root/.ssh
+      - ~/.aws:/root/.aws
+    working_dir: /work

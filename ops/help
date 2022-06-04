@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+MAKEFILE_LIST=$1
+
+printf "\nUSAGE: make [command] e.g. make help\n\n"
+
+for MAKEFILE in $MAKEFILE_LIST
+do
+	printf "$(basename $MAKEFILE .mk):\n"
+	grep -E '^[a-zA-Z_-]+:.*?## .*$$' $MAKEFILE | awk 'BEGIN {FS = ":.*?## "}; {printf " \033[36m%-20s\033[0m %s\n", $1, $2,"\n\n"}'
+	printf "\n"
+done
