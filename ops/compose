@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "--- [ :$(basename $0): ] : Executing $0 $1 $2 $3"
+
+OPERATION=$1
+IMAGE_DIR=$3
+
+export ENTITY=$2
+
+# ------------------------------------------------------------
+# BUILD
+# ------------------------------------------------------------
+
+if [ "$OPERATION" = "build" ]
+then
+    for d in $IMAGE_DIR/* ; do
+        docker-compose build $(basename $d)
+    done
+
+# ------------------------------------------------------------
+# DESTROY
+# ------------------------------------------------------------
+
+elif [ "$OPERATION" = "destroy" ]
+then
+    docker system prune -af
+    unset ENTITY
+fi
+
+echo "--- [ :end $(basename $0): ]"

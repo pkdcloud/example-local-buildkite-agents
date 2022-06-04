@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+echo "--- [ :$(basename $0): ] : Executing $0 $1 $2"
+
+OPERATION=$1
+DEBUG=$2
+
+if $DEBUG
+then
+	set -exuo
+fi
+
+# ------------------------------------------------------------
+# AGENT START
+# ------------------------------------------------------------
+
+if [ "$OPERATION" = "start" ]
+then
+	docker-compose up -d buildkite-agent
+
+# ------------------------------------------------------------
+# AGENT STOP
+# ------------------------------------------------------------
+
+elif [ "$OPERATION" = "stop" ]
+then
+	docker-compose stop buildkite-agent
+fi
+
+echo "--- [ :end $(basename $0): ]"
