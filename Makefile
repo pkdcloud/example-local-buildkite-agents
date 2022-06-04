@@ -12,8 +12,8 @@ HELP_TOOL	:= help
 
 MAKE_DIR 	:= make
 OPS_DIR 	:= ops
-CI_DIR		:= buildkite
-IMAGE_DIR 	:= compose
+CI_DIR		:= .buildkite
+IMAGE_DIR 	:= .docker
 
 DEBUG ?= false
 
@@ -24,7 +24,7 @@ DEBUG ?= false
 SHELL := /usr/bin/env bash
 
 .DEFAULT_GOAL := help
-.MAKEFILES	  := $(MAKE_DIR)/$(HELP_TOOL).mk $(MAKE_DIR)/$(CI_DIR).mk $(MAKE_DIR)/$(IMAGE_DIR).mk
+.MAKEFILES	  := $(MAKE_DIR)/$(HELP_TOOL).mk $(MAKE_DIR)/$(CI_TOOL).mk $(MAKE_DIR)/$(IMAGE_TOOL).mk
 
 include $(.MAKEFILES)
 
