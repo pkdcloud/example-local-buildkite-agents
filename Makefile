@@ -13,7 +13,7 @@ HELP_TOOL	:= help
 MAKE_DIR 	:= make
 OPS_DIR 	:= ops
 CI_DIR		:= buildkite
-IMAGE_DIR 	:= .docker
+IMAGE_DIR 	:= compose
 
 DEBUG ?= false
 
