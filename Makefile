@@ -24,7 +24,7 @@ DEBUG ?= false
 SHELL := /usr/bin/env bash
 
 .DEFAULT_GOAL := help
-.MAKEFILES	  := $(MAKE_DIR)/$(HELP_TOOL).mk $(MAKE_DIR)/$(CI_DIR).mk
+.MAKEFILES	  := $(MAKE_DIR)/$(HELP_TOOL).mk $(MAKE_DIR)/$(CI_DIR).mk $(MAKE_DIR)/$(IMAGE_DIR).mk
 
 include $(.MAKEFILES)
 
