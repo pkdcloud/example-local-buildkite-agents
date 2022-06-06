@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/paul/scm/pkdcloud/example-local-buildkite-agents'
+ops/help " Makefile make/help.mk make/buildkite.mk make/compose.mk"
+make: Leaving directory '/home/paul/scm/pkdcloud/example-local-buildkite-agents'
+ 

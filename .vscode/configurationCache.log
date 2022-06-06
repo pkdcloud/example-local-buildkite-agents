@@ -1,0 +1,1 @@
+{"buildTargets":["agent-start","agent-stop","clean","compose-build","compose-deploy","compose-destroy","help","start","stop"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

@@ -1,0 +1,375 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Jun  7 07:39:41 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+NVM_INC = /home/paul/.nvm/versions/node/v16.13.2/include/node
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 10)
+IMAGE_TOOL := compose
+# makefile (from 'Makefile', line 9)
+CI_TOOL := buildkite
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /home/paul/scm/pkdcloud/example-local-buildkite-agents
+# environment
+DOCKER_BUILDKIT = 1
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /mnt/c/Users/mordt/AppData/Local/Programs/Microsoft VS Code/bin/code
+# makefile (from 'make/compose.mk', line 1)
+MAKEFILE_LIST :=  Makefile make/help.mk make/buildkite.mk make/compose.mk
+# makefile (from 'make/help.mk', line 7)
+.HELP_ARGS := false
+# makefile (from 'Makefile', line 18)
+DEBUG = false
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+INFOPATH = /home/linuxbrew/.linuxbrew/share/info:
+# environment
+VSCODE_CWD = /mnt/c/Users/mordt/AppData/Local/Programs/Microsoft VS Code
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/paul/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/paul/.nvm/versions/node/v16.13.2/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/Microsoft.WindowsTerminal_1.12.10983.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Oculus/Support/oculus-runtime:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Amazon/AWSCLI/bin/:/mnt/c/Program Files/Go/bin:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/mordt/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/mordt/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/mordt/AppData/Local/gitkraken/bin:/mnt/c/Program Files/Multipass/bin:/mnt/c/Users/mordt/go/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+GIT_TRACE = 0
+# environment
+XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
+# environment
+SPACESHIP_VERSION = 3.16.1
+# environment
+NVM_BIN = /home/paul/.nvm/versions/node/v16.13.2/bin
+# environment
+VSCODE_LOG_STACK = false
+# makefile (from 'Makefile', line 13)
+MAKE_DIR := make
+# environment
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-5d118c18-896b-4f49-87d6-d4fb000f0c51.sock
+# makefile (from 'Makefile', line 15)
+CI_DIR := .buildkite
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+SPACESHIP_BATTERY_SHOW = false
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# makefile (from 'make/compose.mk', line 8)
+.COMPOSE_RUNNER := ops/compose
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/paul/scm/pkdcloud/example-local-buildkite-agents
+# default
+.LOADED := 
+# makefile (from 'Makefile', line 7)
+ENTITY = pkdcloud
+# environment
+WSL_INTEROP = /run/WSL/387_interop
+# environment
+CLIENT_LIST = ben  e1  e1-sbx  evs  lk  mc  pkdcloud
+# environment
+PULSE_SERVER = /mnt/wslg/PulseServer
+# environment
+WT_SESSION = 9a809628-3ac6-448a-9ec6-df47b861cf37
+# environment
+MANPATH = /home/paul/.nvm/versions/node/v16.13.2/share/man:/home/linuxbrew/.linuxbrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/paul
+# environment
+GIT_TRACE_PACKET = 0
+# environment
+HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
+# environment
+LOGNAME = paul
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+NVM_CD_FLAGS = -q
+# makefile (from 'make/buildkite.mk', line 7)
+.BUILDKITE_ARGS := false
+# environment
+ZSH = /home/paul/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'make/help.mk', line 8)
+.HELP_RUNNER := ops/help
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = paul
+# makefile (from 'Makefile', line 14)
+OPS_DIR := ops
+# makefile (from 'Makefile', line 26)
+.DEFAULT_GOAL := help
+# environment
+NAME = Code
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/mordt/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /mnt/c/Users/mordt/AppData/Local/Programs/Microsoft VS Code
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+NVM_DIR = /home/paul/.nvm
+# makefile (from 'Makefile', line 16)
+IMAGE_DIR := .docker
+# environment
+HOMEBREW_PREFIX = /home/linuxbrew/.linuxbrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 24)
+SHELL := /usr/bin/env bash
+# automatic
++F = $(notdir $+)
+# environment
+AWS_VAULT_BACKEND = file
+# environment
+HOMEBREW_REPOSITORY = /home/linuxbrew/.linuxbrew/Homebrew
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# environment
+WT_PROFILE_ID = {2c4de342-38b7-51cf-b940-2309a097f518}
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 27)
+.MAKEFILES := make/help.mk make/buildkite.mk make/compose.mk
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+HOSTTYPE = x86_64
+# makefile (from 'Makefile', line 11)
+HELP_TOOL := help
+# environment
+SPACESHIP_ROOT = /home/paul/.oh-my-zsh/custom/themes/spaceship-prompt
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+WELCOME_STRING = Ubuntu 20.04.3 LTS
+# environment
+WAYLAND_DISPLAY = wayland-0
+# makefile (from 'make/buildkite.mk', line 8)
+.BUILDKITE_RUNNER := ops/buildkite
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# environment
+GPG_TTY = /dev/pts/2
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# makefile (from 'make/compose.mk', line 7)
+.COMPOSE_ARGS := false
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+WSL_DISTRO_NAME = Ubuntu
+# variable set hash-table stats:
+# Load=110/1024=11%, Rehash=0, Collisions=16/161=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2080, inode 356974): 12 files, no impossibilities.
+
+# 12 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+stop: agent-stop
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+compose-destroy:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'make/compose.mk', line 21):
+	@$(.COMPOSE_RUNNER) destroy $(.COMPOSE_ARGS)
+
+compose-build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'make/compose.mk', line 15):
+	@$(.COMPOSE_RUNNER) build $(.COMPOSE_ARGS)
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+compose-deploy:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+#  recipe to execute (from 'make/compose.mk', line 18):
+	@$(.COMPOSE_RUNNER) deploy $(.COMPOSE_ARGS)
+
+.PHONY: help
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-05 11:17:36.904836015
+#  File has been updated.
+#  Successfully updated.
+
+start: agent-start
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+agent-stop:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'make/buildkite.mk', line 18):
+	@$(.BUILDKITE_RUNNER) stop $(.BUILDKITE_ARGS)
+
+help:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'make/help.mk', line 15):
+	@$(.HELP_RUNNER) "$(MAKEFILE_LIST)"
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+make/compose.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 19:36:05.373761017
+#  File has been updated.
+#  Successfully updated.
+
+clean: agent-stop compose-destroy
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+agent-start:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'make/buildkite.mk', line 15):
+	@$(.BUILDKITE_RUNNER) start $(.BUILDKITE_ARGS)
+
+# Not a target:
+make/help.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 19:36:05.373761017
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+make/buildkite.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 19:36:05.373761017
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=17/1024=2%, Rehash=0, Collisions=0/35=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 30 / storage = 285 B / avg = 9 B
+# current buf: size = 8162 B / used = 285 B / count = 30 / avg = 9 B
+
+# strcache performance: lookups = 52 / hit rate = 42%
+# hash-table stats:
+# Load=30/8192=0%, Rehash=0, Collisions=1/52=2%
+# Finished Make data base on Tue Jun  7 07:39:41 2022
+
+ 
